@@ -15,6 +15,14 @@
 		C5000B4F25A7AEF10092DA8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5000B4D25A7AEF10092DA8F /* LaunchScreen.storyboard */; };
 		C5000B5A25A7AEF10092DA8F /* testIOS2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5000B5925A7AEF10092DA8F /* testIOS2Tests.swift */; };
 		C5000B6525A7AEF10092DA8F /* testIOS2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5000B6425A7AEF10092DA8F /* testIOS2UITests.swift */; };
+		C5000B7725A8394D0092DA8F /* SimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5000B7525A8394D0092DA8F /* SimpleTableViewCell.swift */; };
+		C5000B7825A8394D0092DA8F /* SimpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5000B7625A8394D0092DA8F /* SimpleTableViewCell.xib */; };
+		C5000B7E25A967460092DA8F /* imageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5000B7C25A967460092DA8F /* imageTableViewCell.swift */; };
+		C5000B7F25A967460092DA8F /* imageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5000B7D25A967460092DA8F /* imageTableViewCell.xib */; };
+		C5511D5B25AAD75C005FF789 /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5511D5925AAD75C005FF789 /* InputTableViewCell.swift */; };
+		C5511D5C25AAD75C005FF789 /* InputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5511D5A25AAD75C005FF789 /* InputTableViewCell.xib */; };
+		C5511D6125B39F69005FF789 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5511D6025B39F68005FF789 /* Segue.swift */; };
+		C5511D6F25B3A343005FF789 /* PicksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5511D6E25B3A343005FF789 /* PicksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		C5000B6025A7AEF10092DA8F /* testIOS2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testIOS2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5000B6425A7AEF10092DA8F /* testIOS2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testIOS2UITests.swift; sourceTree = "<group>"; };
 		C5000B6625A7AEF10092DA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5000B7525A8394D0092DA8F /* SimpleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCell.swift; sourceTree = "<group>"; };
+		C5000B7625A8394D0092DA8F /* SimpleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTableViewCell.xib; sourceTree = "<group>"; };
+		C5000B7C25A967460092DA8F /* imageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageTableViewCell.swift; sourceTree = "<group>"; };
+		C5000B7D25A967460092DA8F /* imageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = imageTableViewCell.xib; sourceTree = "<group>"; };
+		C5511D5925AAD75C005FF789 /* InputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
+		C5511D5A25AAD75C005FF789 /* InputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTableViewCell.xib; sourceTree = "<group>"; };
+		C5511D6025B39F68005FF789 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		C5511D6E25B3A343005FF789 /* PicksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +117,18 @@
 			children = (
 				C5000B4225A7AEED0092DA8F /* AppDelegate.swift */,
 				C5000B4425A7AEED0092DA8F /* SceneDelegate.swift */,
-				C5000B4625A7AEED0092DA8F /* ViewController.swift */,
+				C5511D6525B3A2E1005FF789 /* Controller */,
 				C5000B4825A7AEED0092DA8F /* Main.storyboard */,
 				C5000B4B25A7AEF10092DA8F /* Assets.xcassets */,
 				C5000B4D25A7AEF10092DA8F /* LaunchScreen.storyboard */,
 				C5000B5025A7AEF10092DA8F /* Info.plist */,
+				C5000B7525A8394D0092DA8F /* SimpleTableViewCell.swift */,
+				C5000B7625A8394D0092DA8F /* SimpleTableViewCell.xib */,
+				C5000B7C25A967460092DA8F /* imageTableViewCell.swift */,
+				C5000B7D25A967460092DA8F /* imageTableViewCell.xib */,
+				C5511D5925AAD75C005FF789 /* InputTableViewCell.swift */,
+				C5511D5A25AAD75C005FF789 /* InputTableViewCell.xib */,
+				C5511D6025B39F68005FF789 /* Segue.swift */,
 			);
 			path = testIOS2;
 			sourceTree = "<group>";
@@ -126,6 +149,15 @@
 				C5000B6625A7AEF10092DA8F /* Info.plist */,
 			);
 			path = testIOS2UITests;
+			sourceTree = "<group>";
+		};
+		C5511D6525B3A2E1005FF789 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C5000B4625A7AEED0092DA8F /* ViewController.swift */,
+				C5511D6E25B3A343005FF789 /* PicksViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +264,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5000B4F25A7AEF10092DA8F /* LaunchScreen.storyboard in Resources */,
+				C5000B7825A8394D0092DA8F /* SimpleTableViewCell.xib in Resources */,
 				C5000B4C25A7AEF10092DA8F /* Assets.xcassets in Resources */,
 				C5000B4A25A7AEED0092DA8F /* Main.storyboard in Resources */,
+				C5511D5C25AAD75C005FF789 /* InputTableViewCell.xib in Resources */,
+				C5000B7F25A967460092DA8F /* imageTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5000B7E25A967460092DA8F /* imageTableViewCell.swift in Sources */,
 				C5000B4725A7AEED0092DA8F /* ViewController.swift in Sources */,
+				C5000B7725A8394D0092DA8F /* SimpleTableViewCell.swift in Sources */,
 				C5000B4325A7AEED0092DA8F /* AppDelegate.swift in Sources */,
+				C5511D5B25AAD75C005FF789 /* InputTableViewCell.swift in Sources */,
+				C5511D6125B39F69005FF789 /* Segue.swift in Sources */,
+				C5511D6F25B3A343005FF789 /* PicksViewController.swift in Sources */,
 				C5000B4525A7AEED0092DA8F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

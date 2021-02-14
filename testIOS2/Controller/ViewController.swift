@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
      
     private let tableAssasin: UITableView = {
         let table  = UITableView()
-        table.register(SimpleTableViewCell.self, forCellReuseIdentifier: SimpleTableViewCell.identifier)
+        table.register(SimpleTableViewCell.nib(), forCellReuseIdentifier: SimpleTableViewCell.identifier)
         table.register(imageTableViewCell.nib(), forCellReuseIdentifier: imageTableViewCell.identifier)
         
         table.register(InputTableViewCell.nib(), forCellReuseIdentifier: InputTableViewCell.identifier)
@@ -45,18 +45,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row < 1 {
             let cell = tableAssasin.dequeueReusableCell(withIdentifier: InputTableViewCell.identifier, for: indexPath) as! InputTableViewCell
-            
             return cell
-            
         }
+        
         if indexPath.row < 2 {
-            let cell = tableAssasin.dequeueReusableCell(withIdentifier: imageTableViewCell.identifier, for: indexPath) as! imageTableViewCell
-            cell.delegate = self
-            return cell
-            
+            let cell = tableAssasin.dequeueReusableCell(withIdentifier: imageTableViewCell.identifier, for: indexPath) as? imageTableViewCell
+            cell?.delegate = self
+            return cell!
         }
+        
+        if indexPath.row < 3 {
+            let cell = tableAssasin.dequeueReusableCell(withIdentifier: SimpleTableViewCell.identifier, for: indexPath) as! SimpleTableViewCell
+            return cell
+        }
+        
         let cell = tableAssasin.dequeueReusableCell(withIdentifier: SimpleTableViewCell.identifier, for: indexPath)
-        cell.textLabel?.text = "Fuck"
         return cell
     }
     func goToNextScene() {

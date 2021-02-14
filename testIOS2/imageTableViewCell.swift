@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+
 protocol segueManda: class {
      // you can add parameters if you want to pass. something to controller
      func llevaOtra()
@@ -31,7 +33,7 @@ class imageTableViewCell: UITableViewCell {
     public weak var delegate: segueManda?
  
     @IBAction func camBtn(_ sender: AnyObject) {
-        print("entra al boton")
+        print("btn lleva foto")
         delegate?.llevaOtra()
     }
      

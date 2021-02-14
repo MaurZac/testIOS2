@@ -6,15 +6,45 @@
 //
 
 import UIKit
+import Firebase
 
 class SimpleTableViewCell: UITableViewCell {
     
-    static let identifier = "SimpleTableViewCell"
-
+    static let identifier  = "SimpleTableViewCell"
+    let inputCell = InputTableViewCell()
+    let photoVC = PicksViewController()
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "SimpleTableViewCell", bundle: nil)
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    @IBAction func sendToFire(_ sender: UIButton) {
+        let userName = inputCell.textLabel?.text
+        print(userName)
+        let storage  = Storage.storage()
+        let storageReference = storage.reference()
+        let mediaFolder = storageReference.child("media")
+        if let data = photoVC.imageView?.image?.jpegData(compressionQuality: 0.5){
+            let imageReference = mediaFolder.child("image.jpg")
+            imageReference.putData(data, metadata: nil) { (metadadata, error) in
+                if error != nil {
+                    print(error?.localizedDescription)
+                }else{
+                    imageReference.downloadURL { (url, error) in
+                        if error == nil{
+                            let imageUrl = url?.absoluteString
+                            print(imageUrl)
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

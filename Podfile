@@ -10,6 +10,8 @@ target 'testIOS2' do
    pod 'FirebaseCrashlytics', '7.1.0'
    pod 'Firebase/Storage'
    pod 'FirebaseCore'
+   pod 'Alamofire', '~> 5.4'
+   pod 'PieCharts'
 
 
 end

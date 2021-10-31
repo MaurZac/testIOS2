@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, segueManda {
     func llevaOtra() {
@@ -29,6 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableAssasin.delegate = self
         tableAssasin.dataSource = self
         // Do any additional setup after loading the view.
+        requestCall()
     }
     
     override func viewDidLayoutSubviews() {
@@ -36,6 +38,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             tableAssasin.frame = view.bounds
         
     }
+    
+    func requestCall(){
+        let url = "https://us-central1-bibliotecadecontenido.cloudfunctions.net/helloWorld"
+        AF.request(url,method: .get, encoding : JSONEncoding.default).responseDecodable { (response: AFDataResponse<RequestModel>) in
+                   
+            print("aqui anda\(String(describing: response.value?.colors))")
+            }
+        
+    }
+
+        
+        
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3

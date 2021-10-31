@@ -33,8 +33,8 @@ class PicksViewController: UIViewController, UIImagePickerControllerDelegate & U
     picker.sourceType = .photoLibrary
     picker.delegate = self
     present(picker, animated: true, completion: nil)
-    
     }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
         guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else{

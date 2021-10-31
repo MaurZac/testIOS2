@@ -23,6 +23,7 @@ class SimpleTableViewCell: UITableViewCell {
     }
     
     @IBAction func sendToFire(_ sender: UIButton) {
+        print("::send::")
         let userName = inputCell.textLabel?.text
         let storage  = Storage.storage()
         let storageReference = storage.reference()

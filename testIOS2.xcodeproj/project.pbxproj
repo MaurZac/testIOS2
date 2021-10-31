@@ -25,6 +25,8 @@
 		C5511D5C25AAD75C005FF789 /* InputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5511D5A25AAD75C005FF789 /* InputTableViewCell.xib */; };
 		C5511D6F25B3A343005FF789 /* PicksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5511D6E25B3A343005FF789 /* PicksViewController.swift */; };
 		C55C6EE5272E4A690088F1BB /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55C6EE4272E4A690088F1BB /* RequestModel.swift */; };
+		C55C6EE8272F2AB90088F1BB /* GraphTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55C6EE6272F2AB90088F1BB /* GraphTableViewCell.swift */; };
+		C55C6EE9272F2AB90088F1BB /* GraphTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55C6EE7272F2AB90088F1BB /* GraphTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		C5511D5A25AAD75C005FF789 /* InputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTableViewCell.xib; sourceTree = "<group>"; };
 		C5511D6E25B3A343005FF789 /* PicksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicksViewController.swift; sourceTree = "<group>"; };
 		C55C6EE4272E4A690088F1BB /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		C55C6EE6272F2AB90088F1BB /* GraphTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTableViewCell.swift; sourceTree = "<group>"; };
+		C55C6EE7272F2AB90088F1BB /* GraphTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GraphTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 				C5000B7D25A967460092DA8F /* imageTableViewCell.xib */,
 				C5511D5925AAD75C005FF789 /* InputTableViewCell.swift */,
 				C5511D5A25AAD75C005FF789 /* InputTableViewCell.xib */,
+				C55C6EE6272F2AB90088F1BB /* GraphTableViewCell.swift */,
+				C55C6EE7272F2AB90088F1BB /* GraphTableViewCell.xib */,
 			);
 			path = testIOS2;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 				C5000B7825A8394D0092DA8F /* SimpleTableViewCell.xib in Resources */,
 				C5000B4C25A7AEF10092DA8F /* Assets.xcassets in Resources */,
 				C5000B4A25A7AEED0092DA8F /* Main.storyboard in Resources */,
+				C55C6EE9272F2AB90088F1BB /* GraphTableViewCell.xib in Resources */,
 				C5511D5C25AAD75C005FF789 /* InputTableViewCell.xib in Resources */,
 				C5000B7F25A967460092DA8F /* imageTableViewCell.xib in Resources */,
 				C520429A25BA8F450012C805 /* GoogleService-Info.plist in Resources */,
@@ -373,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C55C6EE8272F2AB90088F1BB /* GraphTableViewCell.swift in Sources */,
 				C5000B7E25A967460092DA8F /* imageTableViewCell.swift in Sources */,
 				C5000B4725A7AEED0092DA8F /* ViewController.swift in Sources */,
 				C5000B7725A8394D0092DA8F /* SimpleTableViewCell.swift in Sources */,

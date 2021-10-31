@@ -18,7 +18,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let table  = UITableView()
         table.register(SimpleTableViewCell.nib(), forCellReuseIdentifier: SimpleTableViewCell.identifier)
         table.register(imageTableViewCell.nib(), forCellReuseIdentifier: imageTableViewCell.identifier)
-        
         table.register(InputTableViewCell.nib(), forCellReuseIdentifier: InputTableViewCell.identifier)
         return table
     }()

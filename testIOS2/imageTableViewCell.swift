@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Firebase
+
 
 protocol segueManda: class {
      // you can add parameters if you want to pass. something to controller

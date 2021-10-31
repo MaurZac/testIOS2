@@ -24,7 +24,6 @@ class SimpleTableViewCell: UITableViewCell {
     
     @IBAction func sendToFire(_ sender: UIButton) {
         let userName = inputCell.textLabel?.text
-        print(userName)
         let storage  = Storage.storage()
         let storageReference = storage.reference()
         let mediaFolder = storageReference.child("media")
